@@ -6,4 +6,25 @@ const ramens = [
  //Displaying the Ramen Images
  function displayRamens() {
     const ramenMenu = document.getElementById('ramen-menu');
+    ramens.forEach(ramen => {
+        const img = document.createElement('img');
+        img.src = ramen.image;
+        img.alt = ramen.name;
+        img.dataset.ig = ramen.id; 
+        img.addEventListener('click', () => handleClick(ramen));
+        ramenMenu.appendChild(img);
+    });
+ }
+ //Handle Click Events
+ function handleClick(ramen) {
+    const detailImage = document.getElementById('detail-image');
+    const detailName = document.getElementById('detail-name');
+    const detailRestaurant = document.getElementById('detail-restaurant');
+    const detailRating = document.getElementById('detail-rating');
+    const detailComment = document.getElementById('detail-comment');
+
+    detailImage.src = ramen.image;  
+    detailName.textContent = ramen.name;
+    detailRestaurant.textContent = 
+
  }
