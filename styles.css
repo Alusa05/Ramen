@@ -1,0 +1,8 @@
+/*layout for main container*/
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/*Ramen Menu*/
+#ramen-menu {}
