@@ -37,6 +37,17 @@ const ramens = [
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        co
+        const newRamen = {
+            id: ramens.length + 1,
+            name: e.target.name.value,
+            restaurant: e.target.restaurant.value,
+            image: e.target.image.value,
+            rating: e.target.rating.value,
+            comment: e.target['new-comment'].value
+        };
+        ramens.push(newRamen);
+        displayRamens(); //This for refreshing the Ramen menu
+        form.reset(); //used for clearing the form
+
     })
  }
