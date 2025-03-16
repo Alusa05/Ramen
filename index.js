@@ -25,6 +25,18 @@ const ramens = [
 
     detailImage.src = ramen.image;  
     detailName.textContent = ramen.name;
-    detailRestaurant.textContent = 
+    detailRestaurant.textContent = 'Restaurant: ${ramen.restaurant}';
+    detailRating.textContent = 'Rating: ${ramen.rating}';
+    detailComment.textContent = 'Comment: ${ramen.comment}';
 
+ }
+
+ //Form Submission
+ function addSubmitListener() {
+    const form = document.getElementById('new-ramen');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        co
+    })
  }
