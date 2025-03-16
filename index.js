@@ -49,5 +49,14 @@ const ramens = [
         displayRamens(); //This for refreshing the Ramen menu
         form.reset(); //used for clearing the form
 
-    })
+    });
  }
+
+function main() {
+    displayRamens();
+    addSubmitListener();
+    if (ramens.length > 0) {
+        handleClick(ramens[0]); //Display the first ramen by default
+    }
+}
+document.addEventListener('DOMContentLoaded', main);
