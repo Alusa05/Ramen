@@ -3,7 +3,9 @@ const ramens = [
     { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "Images/miso.jpg", rating: 4, comment: "Very flavorful!" },
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "Images/tonkotsu.jpg", rating: 5, comment: "Rich and creamy!" },
     { id: 4, name: "Gyukotsu Ramen", restaurant: "Ramen-ya", image: "Images/gyukotsu.jpg", rating: 4, comment: "Very refreshing!" },
-    { id: 5, name: "Kojiro Ramen", restaurant: "Ramen-ya", image: "Images/kojiro.jpg", rating: 3, comment: "Not bad!" }
+    { id: 5, name: "Kojiro Ramen", restaurant: "Ramen-ya", image: "Images/kojiro.jpg", rating: 3, comment: "Not bad!" },
+    { id: 6, name: "Naruto Ramen", restaurant: "Ichiran", image: "Images/naruto.jpg", rating: 5, comment: "Best ramen ever!" },
+    { id: 7, name: "Nirvana Ramen", restaurant: "Menya", image: "Images/nirvana.jpg", rating: 4, comment: "Very tasty!" }
 ];
 
 // Displaying the Ramen Images
