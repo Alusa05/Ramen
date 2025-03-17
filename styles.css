@@ -1,29 +1,34 @@
-/*layout for main container*/
+/* Layout for main container */
 .container {
     display: flex;
     gap: 20px;
 }
 
-/*Ramen Menu*/
+/* Ramen Menu */
 #ramen-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /*The space between the images*/
+    display: flex; /* Use flex to align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* The space between the images */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
-#ramen-img {
+/* Ramen Images */
+.ramen-detail {
+    display: flex; /* Use flex to align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; 
+}
+
+.ramen-detail img {
     width: 80px; /* Updated size */
     height: 80px; /* Updated size */
-    cursor: pointer;
 }
 
-/*Ramen Details*/
+/* Ramen Details */
 #ramen-detail {
-    flex: 1;
-}
-#ramen-detail img {
-    width: 80px; /* Updated size */
-    height: 80px; /* Updated size */
+    display: flex; /* Use flex to align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* Space between ramen detail items */
 }
 
 /* Form */
@@ -56,5 +61,3 @@
 #new-ramen button:hover {
     background-color: #0056b3;
 }
-
-
