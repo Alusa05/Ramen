@@ -12,8 +12,8 @@
 }
 
 #ramen-img {
-    width: 50px; /* Updated size */
-    height: 50px; /* Updated size */
+    width: 80px; /* Updated size */
+    height: 80px; /* Updated size */
     cursor: pointer;
 }
 
@@ -22,8 +22,8 @@
     flex: 1;
 }
 #ramen-detail img {
-    width: 150px; /* Updated size */
-    height: 150px; /* Updated size */
+    width: 80px; /* Updated size */
+    height: 80px; /* Updated size */
 }
 
 /* Form */

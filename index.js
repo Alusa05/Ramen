@@ -6,11 +6,14 @@ const ramens = [
  //Displaying the Ramen Images
  function displayRamens() {
     const ramenMenu = document.getElementById('ramen-menu');
+    ramenMenu.innerHTML = ''; // Clear existing images
     ramens.forEach(ramen => {
         const img = document.createElement('img');
         img.src = ramen.image;
         img.alt = ramen.name;
-        img.dataset.ig = ramen.id; 
+        img.dataset.id = ramen.id; 
+        img.width = 150; // Set width
+        img.height = 150; // Set height
         img.addEventListener('click', () => handleClick(ramen));
         ramenMenu.appendChild(img);
     });
