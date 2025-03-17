@@ -15,21 +15,7 @@ const ramens = [
         ramenMenu.appendChild(img);
     });
  }
- //Handle Click Events
- function handleClick(ramen) {
-    const detailImage = document.getElementById('detail-image');
-    const detailName = document.getElementById('detail-name');
-    const detailRestaurant = document.getElementById('detail-restaurant');
-    const detailRating = document.getElementById('detail-rating');
-    const detailComment = document.getElementById('detail-comment');
-
-    detailImage.src = ramen.image;  
-    detailName.textContent = ramen.name;
-    detailRestaurant.textContent = 'Restaurant: ${ramen.restaurant}';
-    detailRating.textContent = 'Rating: ${ramen.rating}';
-    detailComment.textContent = 'Comment: ${ramen.comment}';
-
- }
+ 
 
  //Form Submission
  function addSubmitListener() {

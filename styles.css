@@ -5,4 +5,57 @@
 }
 
 /*Ramen Menu*/
-#ramen-menu {}
+#ramen-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /*The space between the images*/
+}
+
+#ramen-img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+/*Ramen Details*/
+#ramen-detail {
+    flex: 1;
+}
+#ramen-detail img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Form */
+#new-ramen {
+    flex: 1;
+    max-width: 300px;
+}
+
+#new-ramen label {
+    display: block;
+    margin-top: 10px;
+}
+
+#new-ramen input,
+#new-ramen textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#new-ramen button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#new-ramen button:hover {
+    background-color: #0056b3;
+}
+
+
