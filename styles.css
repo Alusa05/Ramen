@@ -1,4 +1,3 @@
-/* Layout for main container */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,60 +5,69 @@ body {
     background-color: crimson;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align everything horizontally */
-    justify-content: center; /* Center-align everything vertically */
-    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     gap: 20px;
-    width: 100%; /* Ensure the container takes up the full width */
-    justify-content: center; /* Center-align the container's content */
+    width: 100%;
+    justify-content: center;
 }
 
-/* Ramen Menu */
 #ramen-menu {
-    display: flex; /* Use flex to align items in a row */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    gap: 10px; /* The space between the images */
-    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+   
 }
 
-/* Ramen Images */
 .ramen-detail {
-    display: flex; /* Use flex to align items in a row */
-    flex-wrap: nowrap; /* Prevent wrapping */
+    display: flex;
+    flex-wrap: nowrap;
     gap: 10px;
 }
 
 .ramen-detail img {
-    width: 80px; /* Updated size */
-    height: 80px; /* Updated size */
+    width: 80px;
+    height: 80px;
 }
 
-/* Ramen Details */
+#ramen-menu img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #007BFF;
+    cursor: pointer;
+}
+
 #ramen-detail {
-    display: flex; /* Use flex to align items in a row */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    gap: 10px; /* Space between ramen detail items */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
-/* Form */
 #new-ramen {
     max-width: 300px;
-    width: 100%; /* Ensure the form takes up the full width of its container */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align form elements horizontally */
-    margin: 20px 0; /* Add some margin for spacing */
+    align-items: center;
+    margin: 20px 0;
 }
 
 #new-ramen label {
     display: block;
     margin-top: 10px;
-    width: 100%; /* Ensure labels take up the full width */
-    text-align: left; /* Align label text to the left */
+    width: 100%;
+    text-align: left;
 }
 
 #new-ramen input,
