@@ -4,10 +4,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align everything horizontally */
+    justify-content: center; /* Center-align everything vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
 }
+
 .container {
     display: flex;
     gap: 20px;
+    width: 100%; /* Ensure the container takes up the full width */
+    justify-content: center; /* Center-align the container's content */
 }
 
 /* Ramen Menu */
@@ -22,7 +30,7 @@ body {
 .ramen-detail {
     display: flex; /* Use flex to align items in a row */
     flex-wrap: nowrap; /* Prevent wrapping */
-    gap: 10px; 
+    gap: 10px;
 }
 
 .ramen-detail img {
@@ -39,17 +47,19 @@ body {
 
 /* Form */
 #new-ramen {
-    
     max-width: 300px;
-    
+    width: 100%; /* Ensure the form takes up the full width of its container */
+    display: flex;
     flex-direction: column;
-    align-items: right; /* Center align form elements */
+    align-items: center; /* Center-align form elements horizontally */
+    margin: 20px 0; /* Add some margin for spacing */
 }
-
 
 #new-ramen label {
     display: block;
     margin-top: 10px;
+    width: 100%; /* Ensure labels take up the full width */
+    text-align: left; /* Align label text to the left */
 }
 
 #new-ramen input,
