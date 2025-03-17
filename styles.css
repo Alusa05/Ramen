@@ -12,10 +12,9 @@
 }
 
 #ramen-img {
-    width: 100px;
-    height: 100px;
+    width: 50px; /* Updated size */
+    height: 50px; /* Updated size */
     cursor: pointer;
-
 }
 
 /*Ramen Details*/
@@ -23,8 +22,8 @@
     flex: 1;
 }
 #ramen-detail img {
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Updated size */
+    height: 150px; /* Updated size */
 }
 
 /* Form */
